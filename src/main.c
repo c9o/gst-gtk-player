@@ -279,7 +279,7 @@ get_sink (struct AppData *d)
 #ifdef WAYLAND_DEMO
   sink = gst_element_factory_make ("waylandsink", NULL);
 #else
-  sink = gst_element_factory_make ("glimagesink", NULL);
+  sink = gst_element_factory_make ("xvimagesink", NULL);
 #endif
   return gst_object_ref_sink (sink);
 }
